@@ -1,10 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <CSFile Include="src/Luhny.cs"/>
-  </PropertyGroup>
+ <PropertyGroup>
+  <TargetFramework>net7.0</TargetFramework>
+  <ImplicitUsings>enable</ImplicitUsings>
+  <Nullable>enable</Nullable>
+  <EnableDefaultItems>false</EnableDefaultItems>
+  <OutputType>Exe</OutputType>
+ </PropertyGroup>
+
+ <ItemGroup>
+  <Compile Include = "src/Program.cs"/>
+  <Compile Include = "src/lib/Luhny.cs"/>
+ </ItemGroup>
 
 </Project>

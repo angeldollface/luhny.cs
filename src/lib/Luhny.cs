@@ -1,10 +1,26 @@
+/*
+LUHNY.CS by Alexander Abraham a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+// Declaring a namespace for the
+// Luhny library.
 namespace LuhnyLib{
+
+    // Declaring a container class for Luhny's
+    // methods.
     public class Luhny{
+
+        // Removes the last item of an array of long
+        // integers.
         public static List<long> removeLast(List<long> arr){
             int lastIndex = arr.Count - 1;
             arr.RemoveAt(lastIndex);
             return arr;
         }
+
+        // Splits a string into the characters that make it up
+        // and returns these characters a list of strings.
         public static List<string> cleanSplit(
             string subject
         ) {
@@ -14,10 +30,16 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Checks whether the supplied string
+        // is a long integer.
         public static bool isInt(string subject){
             bool result = long.TryParse(subject, out _);
             return result;
         }
+
+        // Checks whether the supplied number sequence string
+        // is a number sequence.
         public static bool isNumberSequence(string subject){
             bool result = true;
             List<string> splitString = cleanSplit(subject);
@@ -29,6 +51,8 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Gets every second number ina list of long integers.
         public static List<long> getImportantNumbers(string subject){
             List<long> result = new List<long>();
             List<string> charList = cleanSplit(subject);
@@ -42,6 +66,8 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Gets the remaining numbers from the string.
         public static List<long> getTrashNumbers(string subject){
             List<long> result = new List<long>();
             List<string> charList = cleanSplit(subject);
@@ -56,6 +82,9 @@ namespace LuhnyLib{
             List<long> new_result = removeLast(result);
             return new_result;
         }
+
+        // Doubles every second number in the sequence and returns
+        // these doubles as a list.
         public static List<long> doubleImportantNumbers(string subject){
             List<long> importantNums = getImportantNumbers(subject);
             List<long> result = new List<long>();
@@ -64,6 +93,8 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Adds all the remaining numbers together.
         public static long addTrashNumbers(string subject){
             long result = 0;
             List<long> garbage = getTrashNumbers(subject);
@@ -73,6 +104,8 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Converts a number array to a string array.
         public static List<string> numArrToStringArr(List<long> numArr){
             List<string> result = new List<string>();
             for (int i = 0; i < numArr.Count; i++){
@@ -84,6 +117,8 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Adds all the doubled integers together.
         public static long addImportantDoubleDigits(string subject){
             long result = 0;
             List<long> doubles = doubleImportantNumbers(subject);
@@ -95,10 +130,17 @@ namespace LuhnyLib{
             }
             return result;
         }
+
+        // Gets the last item from a list of strings.
         public static string getLast(List<string> subject){
             int lastIndex = subject.Count - 1;
             return subject[lastIndex];
         }
+
+        // Validates an IMEI numer with the Luhn algorithm.
+        // Returns "false" if the number isn't valid
+        // or not of the correct length or contains
+        // other characters besides numbers.
         public static bool validateIMEI(string subject){
             bool result = false;
             int stdLen = 15;
