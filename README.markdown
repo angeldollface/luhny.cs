@@ -2,7 +2,7 @@
 
 ![GitHub CI](https://github.com/angeldollface/luhny.cs/actions/workflows/csharp.yml/badge.svg)
 
-***Validate your phone's IMEI using the Luhn algorithm! :iphone: :lock: :wind_face:***
+***Validate your phone's IMEI using the Luhn algorithm and C#! :iphone: :lock: :wind_face:***
 
 ## ABOUT :books:
 
