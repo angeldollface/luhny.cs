@@ -47,11 +47,13 @@ You can then use this library in the in your code. Below is a small code sample 
 
 ```Csharp
 using LuhnyLib;
+
 using static LuhnyLib.Luhny;
-namespace HelloWorld
-{
-    class Program
-    {
+
+namespace LuhnyExample{
+
+    class Program{
+
         static void Main(string[] args){
             string fakeIMEI = "353879234252633";
             bool chars = Luhny.validateIMEI(fakeIMEI);
