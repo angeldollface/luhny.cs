@@ -3,10 +3,6 @@ LUHNY.CS by Alexander Abraham a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 
-// Importing and declaring
-// the system namespace.
-using System;
-
 // Importing the namespace.
 using LuhnyLib;
 
@@ -27,12 +23,12 @@ namespace LuhnyCLI{
         // of entry.
         static void Main(string[] args){
             if (args.Length == 2){
-                if (Luhny.isNumberSequence(args[0])){
-                    if (Luhny.validateIMEI(args[0])){
-                        Console.writeLine("Valid IMEI!");
+                if (Luhny.isNumberSequence(args[1])){
+                    if (Luhny.validateIMEI(args[1])){
+                        Console.WriteLine("Valid IMEI!");
                     }
                     else {
-                        Console.writeLine("Invalid IMEI!");
+                        Console.WriteLine("Invalid IMEI!");
                     }
                 }
                 else {
@@ -40,7 +36,7 @@ namespace LuhnyCLI{
                 }
             }
             else {
-                Console.writeLine("Invalid usage!");
+                Console.WriteLine("Invalid usage!");
             }
         }
     }
