@@ -6,7 +6,7 @@
 
 ## ABOUT :books:
 
-Since I wanted to learn  new language, I built this in three hours suing previous implmenetations of the Luhn algorithm I had made as a reference. This repository contains my reimplemention of the Luhn algorithm in C#.
+Since I wanted to learn  a new language, I built this in three hours using previous implmenetations of the Luhn algorithm that I had made as a reference. This repository contains my  the implemention of this algorithm in C#. Enjoy! :heart_on_fire:
 
 ## INSTALLATION :inbox_tray:
 
