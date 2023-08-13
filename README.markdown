@@ -6,17 +6,17 @@
 
 ## ABOUT :books:
 
-Since I wanted to learn  a new language, I built this in three hours using previous implmenetations of the Luhn algorithm that I had made as a reference. This repository contains my  the implemention of this algorithm in C#. Enjoy! :heart_on_fire:
+Since I wanted to learn  a new language, I built this CLI application in three hours using previous implemenetations of the Luhn algorithm, that I had made, as a reference. This repository contains the implemention of this algorithm in C#. Enjoy! :heart_on_fire:
 
 ## INSTALLATION :inbox_tray:
 
 ### As a library
 
-Feel free to download the library from this repo and use in your own projects. The file is located in the `src/lib`folder.
+Feel free to download the library from this repo and use in your own projects. The file is located in the `src/lib` folder.
 
-### On the command line
+### As a CLI application
 
-Assuming you have the `.NET` SDK version 7 or later installed, you can use this project on your own machine in the following way:
+Assuming you have the `.NET` SDK version 7 or later installed you can use this project on your own machine in the following way:
 
 - 1.) Download the source code:
 
@@ -43,7 +43,7 @@ dotnet build
 ### As a library
 
 Make sure to include the path to the file in your `*.csproj`file.
-You can then use this library in the in your code. Below is a small code sample of how you would validate an IMEI number using this library:
+You can then use this library in your own code. Below is a small code sample of how you would validate an IMEI number using this library:
 
 ```Csharp
 using LuhnyLib;
